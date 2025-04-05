@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+</head>
+<body style="margin:0; font-family: Arial, sans-serif;">
+  <!-- Navbar -->
+  <nav style="background-color:#000; padding:15px; display:flex; justify-content:space-between; align-items:center; color:#fff;">
+    <div style="font-size:24px; font-weight:bold; color:orange;">MySwiggyClone</div>
+    <div>
+      <a href="displayProduct.html" style="margin:0 15px; text-decoration:none; color:white;">Products</a>
+      <a href="signup.html" style="margin:0 15px; text-decoration:none; color:white;">Sign Up</a>
+      <a href="login.html" style="margin:0 15px; text-decoration:none; color:white;">Login</a>
+    </div>
+  </nav>
+
+  <h2 style="text-align:center; margin-top:30px;">Login</h2>
+  <form action="http://localhost:8080/auth/olduser" method="get" style="max-width:400px; margin:auto;">
+    <label>Email:</label>
+    <input type="email" name="email" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+    
+    <label>Password:</label>
+    <input type="password" name="passwd" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+    <input type="submit" value="Login" style="width:100%; padding:10px; background:orange; border:none; color:white;">
+  </form>
+
+  <div style="text-align:center; margin-top:20px;">
+    <a href="http://localhost:8080/oauth2/authorization/google">
+      <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png"
+           alt="Sign in with Google" style="height:40px;">
+    </a>
+  </div>
+</body>
+</html>
